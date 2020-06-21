@@ -1,0 +1,351 @@
+:root{
+    --blue:#573ebd !important;
+    --yellow:#FCD72F !important;
+    --red:#CE0803 !important;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "poppins",sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--blue);
+}
+.text{
+    width: 100%;
+    border:3px solid white;
+    background-color: #eeeeee;
+    transition: 0.3s;
+    padding: 0.75rem 0.5rem;
+    padding-left: 40px;
+}
+
+.postImage{
+    width: 100%;
+    max-height: 400px;
+    object-fit: contain;
+}
+
+h1{
+    font-size: 2rem !important;
+    font-weight: bold !important;
+}
+.fade{
+    animation:fadeIn 0.5s forwards;
+}
+@keyframes fadeIn {
+    from{opacity: 0;transform: translateY(10px);}
+    to{opacity: 1;transform: translateY(0);}
+}
+h1 small{
+    font-weight: 300;
+}
+.bg-yellow{
+    background-color: var(--yellow) !important;
+    color: black;
+}
+.title{
+    transform: rotate(-90deg);
+    position: absolute;
+    font-size: 1.5rem;
+    top: -20%;
+    margin:0;
+    padding: 0;
+    transition: 0.3s;
+}
+.title-active{
+    top:15%;
+}
+#searchResults{
+    z-index: 5;
+    left: 20px;
+    width: 400px;
+}
+.requestWindowGrid{
+    display: grid;
+    display: -ms-grid;
+    grid-template-columns: 10% 40% 50%;
+    align-items: center;
+}
+
+.button-active{
+    background-color: white;
+    color: var(--blue);
+    border: 3px solid white !important;
+    border-bottom: 3px solid var(--blue);
+}
+
+.wrapper{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon{
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+    border-radius: 50% !important;
+}
+.liked{
+    background-color: var(--yellow);
+    border:3px solid var(--yellow) !important;
+    color: black;
+}
+.text:focus{
+    border:3px solid var(--blue);
+    background-color: white;
+    padding-left: 40px;
+}
+.button{
+    border: none;
+    padding: 0.75rem 1rem;
+    transition: 0.3s;
+    border:3px solid #eeeeee;
+    outline: none;
+    transition: 0.5s;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fa-bars{
+    margin:0;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.fa-bars-active{
+    margin-top: 180px;
+}
+i{
+    transition: 0.5s;
+}
+.fa-bars:hover{
+    transform: rotateZ(180deg);
+}
+#searchIcon{
+    position: absolute;
+    top:35px;
+    left: 35px;
+}
+.overflow-y{
+    overflow-y: scroll;
+}
+.bg-red{
+    background-color: var(--red);
+}
+.bottomBar{
+    display: none;
+}
+.bg-blue{
+    background-color: var(--blue);
+}
+.bg{
+    background-color: var(--blue);
+}
+a{
+    color: white !important;
+}
+.sideBar-active{
+    background-color: white;
+    color: var(--blue);
+}
+::-webkit-scrollbar{
+    width: 3px;
+}
+::-webkit-scrollbar-thumb{
+    width: 3px;
+    background-color: var(--blue);
+}
+.statusGrid{
+    padding: 0.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.requestWindow{
+    top:70px;
+    width:400px;
+    z-index: 3;
+    background-color: white;
+    max-height: 200px;
+    overflow-y: scroll;
+}
+.text-blue{
+    color: var(--blue) !important;
+}
+.windowcontent{
+    font-size: 1.25rem;
+}
+.Nicon{
+    height: 30px;
+    width: 30px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+#addStatus{
+    border:3px solid var(--blue);
+    border-radius: 25px;
+    padding: 1rem;
+    transition: 0.3s;
+}
+#addStatus:hover{
+    border:3px solid var(--yellow);
+}
+.statusImage{
+    height: 60px;
+    width: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid var(--yellow);
+}
+.statusPhotosGrid{
+    display: grid;
+    grid-template-columns: 1fr 6fr 1fr;
+}
+
+.seenStatus{
+    opacity: 0.6;
+}
+
+.seenStatus img{
+    border: 5px solid white;
+}
+
+.statusPhotosGrid i{
+    height: 100%;
+    background-color: #eeeeee;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.cursor{
+    cursor: pointer;
+}
+.viewStatusImage{
+    max-width: 350px;
+    max-height: 350px;
+    object-fit: cover;
+}
+.status small{
+    font-size: 0.75rem;
+    width: 100%;
+    overflow-x: hidden;
+}
+.main {
+  display: grid;
+  height:100vh;
+  grid-template-columns: 0.3fr 0.9fr 1.8fr 1fr;
+  grid-template-rows: 0.2fr 1.8fr;
+  grid-template-areas: "sideBar topBar topBar topBar" "sideBar tools feeds status";
+}
+
+.sideBar {
+    grid-area: sideBar;
+    background-color: var(--blue);
+    padding-top: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.topBar {
+  display: grid;
+  grid-template-columns: 0.9fr 0.9fr 1.2fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "searchBar searchBar notificationBar userBar";
+  grid-area: topBar;
+}
+
+.searchBar { grid-area: searchBar; }
+
+.notificationBar {
+    grid-area: notificationBar;
+    color: #eeeeee;
+    font-size: 1.5rem;
+}
+
+.notificationBar div{
+    margin-right: 1rem;
+}
+
+.badge{
+    margin-left: 5px;
+    font-size: 1rem !important;
+    background-color: var(--blue);
+    color: white;
+    border-radius: 5px;
+}
+
+.notificationBar i{
+    transition: 0.3s;
+}
+
+.notificationBar i:hover{
+    color: var(--blue);
+}
+
+.userBar { grid-area: userBar; background-color: var(--blue); color: white}
+.userBar img{
+    border: 3px solid white;
+}
+
+.feeds { grid-area: feeds; overflow-y: scroll;}
+
+.tools { grid-area: tools; overflow-y: scroll; background-color: #eeeeee;}
+
+.status {
+  grid-area: status;
+  overflow-y: scroll;
+}
+
+@media (max-width:700px){
+    .main {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 0.1fr 0.5fr 2.9fr;
+      grid-template-areas: "topBar topBar" "statusBar statusBar" "feeds feeds";
+    }
+
+    .logOutTop{
+        display: none;
+    }
+
+    .tools{
+        display: none;
+    }
+
+    .sideBar{
+        display: none;
+    }
+
+    .topBar { grid-area: topBar; }
+
+    .status {
+      grid-area: statusBar;
+      display: flex;
+      overflow-x: scroll;
+      overflow-y: hidden;
+    }
+
+    .statusGrid{
+        display: flex;
+    }
+    .feeds { grid-area: feeds; overflow-y: scroll;}
+
+    .bottomBar {
+        position: fixed;
+        height: 10vh;
+        bottom: 0;
+        display: block;
+        width:100vw;
+        grid-area: bottomBar;
+        background-color: var(--blue);
+    }
+}

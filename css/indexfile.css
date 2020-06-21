@@ -1,0 +1,178 @@
+*{
+	box-sizing: border-box;
+	font-family: "poppins",sans-serif;
+	padding:0;
+	margin:0;
+}
+body{
+	background-color: #573ebd;
+	color: white;
+}
+i{
+	font-size: 16px;
+}
+.main{
+	height: 100vh;
+	display: grid;
+	grid-template-columns: 55% 45%;
+}
+.main .left .nav i{
+	cursor: pointer;
+}
+p.invalid{
+	color: red;
+}
+.nav{
+	margin-bottom: 40px;
+	display: flex;
+	align-items: center;
+}
+.nav i{
+	font-size: 30px;
+	margin-right: 40px;
+}
+.left{
+	display: flex;
+	flex-direction: column;
+	padding: 50px;
+}
+.right{
+	margin:10px;
+	background-color: white;
+	border-radius: 25px;
+}
+.usernameCheck{
+	position: relative;
+}
+p.message{
+	margin-left: 10px;
+	transition: 0.3s;
+	margin-bottom: 30px;
+}
+p.message.valid{
+	color: green;
+	border-radius: 25px;
+	background-color: white;
+	padding:15px;
+	max-width: 300px;
+	margin-left: 10px;
+}
+p.message.invalid{
+	color: red;
+	background-color: white;
+	padding:15px;
+	max-width: 300px;
+	margin-left: 10px;
+}
+button.icon{
+	position: absolute;
+	background:none;
+	color: white;
+	border:none;
+	right: 30px;
+	top: 15px;
+}
+button.icon i{
+	font-size: 20px;
+}
+.form-control{
+	width: 100%;
+	padding:15px;
+	padding-left: 30px;
+	background-color: #555;
+	color: white;
+	border-radius:25px;
+	border:none;
+	outline: none;
+	box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+.form-control .invalid{
+	border:1px solid red;
+}
+.form-control .valid{
+	border:1px solid green;
+}
+.message{
+	margin-top: 10px;
+	padding:0 30px;
+}
+.message h1{
+	font-size: 50px;
+	margin-bottom: 10px;
+	font-weight: 800;
+}
+.message p{
+	font-weight: 300;
+	margin-bottom: 40px;
+}
+.right{
+	padding: 3rem;
+	display: flex;
+	flex-direction: column;
+	color: black;
+}
+.right h1{
+	font-size: 3rem;
+	margin-bottom: 10px;
+}
+.right h1{
+	font-size: 3rem;
+	margin-bottom: 10px;
+}
+.right small{
+	font-size: 1rem;
+	margin:10px 0;
+}
+.right hr{
+	height: 5px;
+	background-color: #573ebd;
+	border:none;
+	margin-bottom: 20px;
+}
+.pop{
+	position: absolute;
+	background-color: white;
+	color: black;
+	top: -200px;
+	left: 30px;
+	padding:2rem;
+	border-radius: 25px;
+	box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+	transition:0.3s ease;
+}
+.pop.active{
+	top:120px;
+	left: 30px;
+}
+.right .textbox .form-control{
+	margin:1rem 0;
+}
+.btn
+{
+	padding:1rem;
+	color: white;
+	background-color:#573ebd;
+	border:none;
+	text-align: center;
+	border-radius: 25px;
+	margin-bottom: 20px;
+	cursor: pointer;
+	transition: 0.3s;
+}
+.btn:hover{
+	color: #573ebd;
+	background-color:white;
+}
+.info{
+	font-size: 0.75rem;
+	max-width: 200px;
+	text-align:center;
+}
+label{
+	margin:1rem 0;
+}
+@media (max-width: 700px){
+	.main{
+		grid-template-columns: 1fr;
+	}
+}

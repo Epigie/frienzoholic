@@ -1,0 +1,64 @@
+*{
+    font-family: "poppins", sans-serif;
+    border-radius: 0 !important;
+    box-sizing: border-box;
+}
+body{
+    margin:0;
+    padding: 0;
+}
+.fh{
+    height: 100vh;
+}
+.bg{
+    	background-color: #573ebd;
+    	color: white;
+}
+.color{
+    background-color: white;
+    color: #573ebd;
+}
+h1{
+    font-family: "poppins",sans-serif;
+    font-weight: bold;
+}
+.p{
+    padding: 2rem;
+}
+.px{
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+p{
+    font-family: "poppins", sans-serif;
+    font-weight: 400;
+}
+.form-control{
+    border:3px solid white;
+    background-color: #eeeeee;
+}
+.form-control .is-valid{
+    border:3px solid red;
+    background-color: #eeeeee;
+}
+.btn{
+    border:3px solid white;
+    transition: 0.3s;
+}
+.btn:hover{
+    border:3px solid #573ebd;
+    background-color: white;
+    color: #573ebd;
+}
+select{
+    border:0;
+}
+option{
+    border:0;
+}
+.profile{
+    border: 5px solid #573ebd;
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+}

@@ -1,0 +1,131 @@
+*{
+    font-family: "poppins", sans-serif;
+    border-radius: 0 !important;
+    box-sizing: border-box;
+}
+.fh{
+    height: 100vh;
+}
+.center{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bg{
+    	background-color: #573ebd;
+    	color: white;
+}
+.color{
+    background-color: white;
+    color: #573ebd;
+}
+h1{
+    font-family: "poppins",sans-serif;
+    font-weight: bold;
+}
+.p{
+    padding: 2rem;
+}
+.px{
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+p{
+    font-family: "poppins", sans-serif;
+    font-weight: 400;
+}
+.form-control{
+    border:3px solid white;
+    background-color: #eeeeee;
+    transition: 0.3s;
+    padding: 1.2rem;
+}
+.form-control .is-valid{
+    border:3px solid red;
+    background-color: #eeeeee;
+}
+.btn{
+    border:3px solid white;
+    transition: 0.3s;
+}
+.btn:hover{
+    border:3px solid #573ebd;
+    background-color: white;
+    color: #573ebd;
+}
+select{
+    border:0;
+}
+option{
+    border:0;
+}
+.profile{
+    border: 5px solid #573ebd;
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+}
+#barIcon{
+    font-size: 2rem;
+    margin-right: 1rem;
+    transition: 0.3s;
+    cursor: pointer;
+}
+#barIcon:hover{
+    font-size: 2rem;
+    margin-right: 1rem;
+    color: #573ebd;
+    transform: rotateZ(180deg);
+}
+.form-control:focus{
+    border:3px solid #573ebd;
+    box-shadow: none;
+}
+#searchIcon{
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+}
+#searchBar{
+    padding-left: 45px;
+}
+#main{
+    padding:4rem;
+    display: grid;
+    grid-template-rows: 160px 1fr;
+}
+#profiles{
+    height: 300px;
+    overflow-y: scroll;
+}
+::-webkit-scrollbar{
+    width: 5px;
+}
+::-webkit-scrollbar-thumb{
+    width: 5px;
+    background-color: #573ebd;
+}
+a:hover{
+    text-decoration: none;
+}
+#profile{
+    color: black;
+    text-decoration: none;
+    display: grid;
+    grid-template-columns: 1fr 10fr 7fr;
+    align-items: center;
+    padding:1rem 1.25rem;
+}
+#profile img{
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+    border-radius: 50% !important;
+    margin-right: 10px;
+}
+.follow{
+    border:3px solid #573ebd;
+    background-color: white;
+    color: #573ebd;
+}
