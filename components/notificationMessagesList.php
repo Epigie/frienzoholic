@@ -9,7 +9,7 @@
     else{
         $user_id=$_SESSION['user_id'];
     }
-    $notif=Messages::getNewMessages($user_id,);
+    $notif=Messages::getNewMessages($user_id);
     foreach ($notif as $noti) {
         $image=Users::getProfilePic($noti['from_user_id']);
         $username=Users::getUsername($noti['from_user_id']);
